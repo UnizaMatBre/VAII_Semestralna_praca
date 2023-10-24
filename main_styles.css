@@ -1,6 +1,7 @@
 /* Constants */
 :root {
 	--menuwidth: 160px;
+	--projectselectorheight: 25px;
 }
 
 
@@ -38,5 +39,30 @@
 /* Main content */
 .main-content {
 	margin-left: var(--menuwidth); 
-	padding: 0px 10px;
+	margin-top: var(--projectselectorheight);
+	padding: 10px 10px;
+}
+
+
+.project-selector {
+	display: inline-block;
+	
+	top: 0;
+	left: var(--menuwidth);
+	position: fixed;
+	
+	font-family: monospace;
+}
+
+.project-selector .main-button {
+	background-color: #D6D6D6;
+	
+	font-family: monospace;
+	font-size: var(--projectselectorheight);
+	padding: 10px;
+	border: none;
+}
+
+.project-selector .main-button:focus {
+	background-color: #A6A6A6;
 }
