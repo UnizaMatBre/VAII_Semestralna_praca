@@ -1,0 +1,42 @@
+/* Constants */
+:root {
+	--menuwidth: 160px;
+}
+
+
+/* Sidebar menu */
+.side-main-menu {
+	height: 100%; 
+	width: var(--menuwidth); 
+	position: fixed; 
+	z-index: 1; 
+	top: 0; 
+	left: 0;
+	background-color: #111; 
+	overflow-x: hidden;
+	padding-top: 50px;
+}
+
+
+/* The navigation menu links */
+.side-main-menu a {
+	font-family: monospace;
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+}
+
+
+/* When mouse hovering over link */
+.side-main-menu a:hover {
+	background-color: #666666;
+	color: white;
+}
+
+/* Main content */
+.main-content {
+	margin-left: var(--menuwidth); 
+	padding: 0px 10px;
+}
