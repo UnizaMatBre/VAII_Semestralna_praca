@@ -68,7 +68,7 @@
 			document.getElementById("modal-close").onclick = function() {
 				modal_content.innerHTML = "";
 				modal_window.style.display = "none";
-			}
+			};
 			
 			
 			// fetches page and shows it in modal window
@@ -84,8 +84,8 @@
 					})
 					.catch(function(expection) {
 						alert(expection);
-					})
-			}
+					});
+			};
 			
 		
 		
@@ -99,19 +99,19 @@
 				for(let index = 0; index < project_list.length; index++) {
 					if(index === selectedIndex) {
 						continue;
-					}
+					};
 					
 					buttons += "<button onclick=\"selectProject(" + index + ")\">" + project_list[index] + "</button>";
-				}
+				};
 				
 				document.getElementById("project-list").innerHTML = buttons;
-			}
+			};
 			
 			
 		
 			window.onload = function(eventObj) {
-				selectProject(1)
-			}
+				selectProject(1);
+			};
 		
 		</script>
 	</body>
