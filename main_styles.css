@@ -53,18 +53,20 @@
 	
 	font-family: monospace;
 	font-size: calc(var(--projectselectorheight) / 2);
+	font-family: monospace;
 }
 
 .project-selector .main-button {
-	background-color: #D6D6D6;
+	background-color: #C6C6C6;
 	white-space: nowrap;
 	overflow-x: auto;
 	
 	width: inherit;
 	
-	font-family: monospace;
-	height: var(--projectselectorheight);
+	font-family: inherit;
 	font-weight: bold;
+	height: var(--projectselectorheight);
+	
 	font-size: inherit;
 	padding: 15px;
 	border: none;
@@ -73,6 +75,33 @@
 .project-selector .main-button:focus {
 	background-color: #A6A6A6;
 }
+
+
+.project-selector .selectable-projects {
+	display: none;	
+}
+
+.project-selector .selectable-projects button {
+	height: var(--projectselectorheight);
+	
+	white-space: nowrap;
+	display: block;
+	
+	padding: 15px;
+	background-color: #E6E6E6;
+	
+	font-size: inherit;
+	font-family: inherit;
+	
+	border: none;
+}
+
+.project-selector .selectable-projects button:hover {
+		background-color: #A6A6A6;
+}
+
+
+
 
 /* Media selector for tablet */
 @media screen and (max-width: 641px) {
@@ -113,7 +142,7 @@
 		left: 0;
 		
 		font-family: monospace;
-		font-size: 15px
+		font-size: 15px;
 	}
 	
 	
