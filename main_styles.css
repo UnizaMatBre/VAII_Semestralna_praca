@@ -56,6 +56,7 @@
 
 .project-selector .main-button {
 	background-color: #D6D6D6;
+	white-space: nowrap;
 	
 	font-family: monospace;
 	height: var(--projectselectorheight);
@@ -67,4 +68,16 @@
 
 .project-selector .main-button:focus {
 	background-color: #A6A6A6;
+}
+
+/* Media selector for tablet */
+@media screen and (max-width: 641px) {
+	.side-main-menu a {
+		font-size: 15px;
+	}
+	
+	:root {
+		--projectselectorheight: 45px;
+		--menuwidth: 80px
+	}
 }
