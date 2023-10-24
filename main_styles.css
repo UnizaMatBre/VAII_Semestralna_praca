@@ -1,7 +1,7 @@
 /* Constants */
 :root {
 	--menuwidth: 160px;
-	--projectselectorheight: 25px;
+	--projectselectorheight: 75px;
 }
 
 
@@ -15,7 +15,7 @@
 	left: 0;
 	background-color: #111; 
 	overflow-x: hidden;
-	padding-top: 50px;
+	padding-top: var(--projectselectorheight);
 }
 
 
@@ -58,8 +58,10 @@
 	background-color: #D6D6D6;
 	
 	font-family: monospace;
-	font-size: var(--projectselectorheight);
-	padding: 10px;
+	height: var(--projectselectorheight);
+	font-size: calc(var(--projectselectorheight) / 2);
+	font-weight: bold;
+	padding: 15px;
 	border: none;
 }
 
